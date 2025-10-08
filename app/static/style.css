@@ -1,0 +1,4 @@
+/* Prevent white space below folium map iframe */
+iframe[title="streamlit_folium.st_folium"] {
+    height: 500px !important;
+}
