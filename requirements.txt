@@ -19,3 +19,5 @@ pyproj
 google-cloud-aiplatform
 google-generativeai
 tabulate
+geemap
+earthengine-api
