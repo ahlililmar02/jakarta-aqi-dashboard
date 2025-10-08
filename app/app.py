@@ -79,7 +79,7 @@ with st.sidebar:
 
 	page = option_menu(
 		menu_title=None,
-		options=["Air Quality Monitor", "Download Data", "AOD Derived PM2.5 Heatmap", "About"],
+		options=["Air Quality Monitor", "Download Data", "PM2.5 Prediction", "About"],
 		icons=["bar-chart", "download", "cloud", "info-circle"],
 		default_index=0
 	)
@@ -126,7 +126,7 @@ elif page == "Download Data":
 	download_data.show()
 
 #  PAGE 3: MODEL PREDICTION
-elif page == "AOD Derived PM2.5 Heatmap":
+elif page == "PM2.5 Prediction":
     aod_pm25_heatmap.show()
 
 #  PAGE 4: ABOUT

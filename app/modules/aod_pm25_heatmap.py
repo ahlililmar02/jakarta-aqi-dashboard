@@ -24,7 +24,7 @@ def show():
 	st.markdown(
 		"""
 		<div style="font-size: 24px; font-weight: 600; margin-bottom: 10px;">
-			AOD-PM2.5 Heatmap
+			PM2.5 Prediction Heatmap
 		</div>
 		""",
 		unsafe_allow_html=True
@@ -44,15 +44,20 @@ def show():
 
 		st.markdown("""
 			<div style="font-size:16px; font-weight:500; margin-bottom:10px;">
-				PM2.5 Prediction Using Aerosol Optical Depth
+				PM2.5 Prediction Based on Machine Learning Models Using Remote-sensing Data in Jakarta
 			</div>
 
-			<div style="font-size:14px; font-weight:300; margin-bottom:10px;">
-				This heatmap visualizes the predicted PM2.5 concentrations, which are a key indicator of ambient air quality and potential health risks. Satellite-derived Aerosol Optical Depth (AOD) has been extensively studied as a proxy for surface-level PM2.5. For instance, Paciorek et al. (2008) identified statistically significant spatiotemporal associations between AOD retrievals and ground-level PM2.5 in the eastern United States. In our current setup, we utilize a traditional machine learning algorithms, <b>XGBoost</b>, <b>Random Forest</b>, and <b>LightGBM</b>, with AOD, meteorological parameters, and land-use features as predictors. The model is retrained weekly using the latest observed PM2.5 data to support continuous validation and improvement.
+			<div style="font-size:14px; font-weight:300; margin-bottom:10px;text-align:justify;">
+				
+			One of the fine airborne pollutant is **PM2.5** with a diameter less than 2.5 µm, means they **efficiently penetrate the human respiratory system**. 
+			Despite continuous PM2.5 monitoring by government and international agencies, **Jakarta’s unevenly distributed stations** limit spatially consistent mapping of PM2.5. 
+			Several studies have utilized machine learning models such as **Random Forest (RF), XGBoost, and LightGBM** to predict PM2.5 concentrations 
+
 			</div>
 
-			<div style="font-size:14px; font-weight:300; margin-bottom:10px;">
-				The heatmap is generated from tabular spatial data that has been converted into <b>GeoDataFrames</b> using the <b>GeoPandas</b> library, with a spatial resolution of approximately 800 meters. Model performance is evaluated by comparing predicted and observed PM2.5 values from monitoring stations using the <b>Mean Squared Error (MSE)</b> metric.
+			<div style="font-size:14px; font-weight:300; margin-bottom:10px;text-align:justify;">
+			Predicting the PM2.5 concentration is necessary for social planning and environmental management, to mitigate the impact of air pollution on public health. 
+			This project focuses on predicting PM2.5 concentrations in Jakarta to cover the gaps caused by the city’s scattered air quality network using machine learning models (Random Forest, XGBoost, and LightGBM).			
 			</div>
 			""", unsafe_allow_html=True)
 			
