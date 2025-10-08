@@ -2,3 +2,4 @@ vertex-key.json
 .env
 tif_output/
 app/tif_output/
+app/vertex-key.json
