@@ -21,7 +21,7 @@ from google.genai import types
 client = genai.Client(vertexai=True, project="double-reef-468803-r9", location="us-central1")
 
 
-@st.cache_data(ttl=600) 
+@st.cache_data(ttl=1800) 
 def load_data(today=None):
 	# Use today's date if not provided
 	if today is None:
