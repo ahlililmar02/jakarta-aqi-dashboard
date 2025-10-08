@@ -54,6 +54,11 @@ def show():
 				<li>Served securely via <b>NGINX</b> for optimized performance and uptime.</li>
 			</ul>
 
+			<div style="margin-top:20px; font-size:14px;">
+				<p>This project is currently in an early stage of development and will improve over time.</p>
+				<p>Connect with me on <a href="https://www.linkedin.com/in/ahlil-batuparan-850b6b243/" target="_blank">LinkedIn</a>.</p>
+				<p>View my project source code on <a href="https://www.linkedin.com/in/ahlil-batuparan-850b6b243/" target="_blank">GitHub</a>.</p>
+			</div>
 
 			<div style="font-size:16px; font-weight:500; margin-top:20px; margin-bottom:10px;">
 				References
@@ -68,10 +73,5 @@ def show():
 				<li><a href="https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5" target="_blank">ERA5 (ECMWF Reanalysis v5)</a></li>
 				<li><a href="https://developers.google.com/earth-engine/datasets/tags/weather" target="_blank">Google Earth Engine</a></li>
 			</ul>
-
-			<div style="margin-top:20px; font-size:14px;">
-				<p>This project is currently in an early stage of development and will improve over time.</p>
-				<p>Connect with me on <a href="https://www.linkedin.com/in/ahlil-batuparan-850b6b243/" target="_blank">LinkedIn</a>.</p>
-				<p>View my project source code on <a href="https://www.linkedin.com/in/ahlil-batuparan-850b6b243/" target="_blank">GitHub</a>.</p>
-			</div>
+						
 			""", unsafe_allow_html=True)
