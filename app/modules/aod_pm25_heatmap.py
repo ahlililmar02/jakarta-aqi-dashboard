@@ -18,7 +18,7 @@ from google import genai
 from google.genai import types
 
 # --- Initialize Gemini Client ---
-client = genai.Client(vertexai=True, project="double-reef-468803-r9", location="us-central1")
+client = genai.Client(vertexai=True, project="PROJECT_ID", location="us-central1")
 
 def show():
 	st.markdown(
